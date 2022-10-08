@@ -1,0 +1,11 @@
+{
+  "expo": {
+    "name": "eripnew",
+    "slug": "eripnew",
+    "version": "1.0.0",
+    "assetBundlePatterns": [
+      "**/*"
+    ]
+  },
+  "name": "eripnew"
+}
