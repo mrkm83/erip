@@ -1,21 +1,46 @@
-import { StatusBar } from 'expo-status-bar';
+
 import React from 'react';
-import { StyleSheet, Text, View } from 'react-native';
 
-export default function App() {
+import {
+ SafeAreaView,
+ ScrollView,
+ StatusBar,
+ StyleSheet,
+ Text,
+ useColorScheme,
+ View,
+} from 'react-native';
+import { Provider as PaperProvider } from 'react-native-paper';
+
+
+import Navigatore from './App/Appnavigtore/Navigatore'
+//import DrawerNav from './app/Appnavigtore/DrawerNav'
+
+
+// const App = () => {
+//   LogBox.ignoreAllLogs()
+//   return (
+//     <Navigatore/>
+   
+//   )
+// };
+// export default App;
+
+const App = () => {
   return (
-    <View style={styles.container}>
-      <Text>Open up App.js to start working on your app!</Text>
-      <StatusBar style="auto" />
-    </View>
-  );
-}
+       <PaperProvider>
 
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: '#fff',
-    alignItems: 'center',
-    justifyContent: 'center',
-  },
-});
+<Navigatore/>
+
+</PaperProvider>
+  );
+};
+
+export default App;
+
+
+
+
+
+ 
+
